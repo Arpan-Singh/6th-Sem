@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GGSIPU BBA(B&I) Sem 6 — Complete Exam Guide</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, serif; background: #f8f7f2; color: #1a1a1a; line-height: 1.7; }
+  .header { background: #1a1a2e; color: #fff; padding: 28px 40px; }
+  .header h1 { font-size: 24px; font-weight: 700; letter-spacing: 0.5px; }
+  .header p { color: #aaa; font-size: 14px; margin-top: 6px; font-family: Arial, sans-serif; }
+  .badge { display: inline-block; background: #e63946; color: #fff; font-size: 11px; padding: 3px 10px; border-radius: 12px; font-family: Arial; font-weight: 700; margin-left: 10px; vertical-align: middle; }
+  .nav { background: #16213e; padding: 0 40px; display: flex; gap: 4px; overflow-x: auto; }
+  .nav button { background: none; border: none; color: #aaa; padding: 14px 18px; font-size: 13px; font-family: Arial; cursor: pointer; border-bottom: 3px solid transparent; white-space: nowrap; transition: all 0.2s; }
+  .nav button:hover { color: #fff; }
+  .nav button.active { color: #e2c36b; border-bottom-color: #e2c36b; font-weight: 700; }
+  .page { display: none; padding: 30px 40px; max-width: 1100px; }
+  .page.active { display: block; }
+  h2 { font-size: 22px; color: #1a1a2e; border-left: 5px solid #e63946; padding-left: 14px; margin: 28px 0 16px; }
+  h3 { font-size: 17px; color: #16213e; margin: 22px 0 10px; font-weight: 700; }
+  h4 { font-size: 15px; color: #333; margin: 16px 0 8px; }
+  p { margin-bottom: 10px; font-size: 15px; }
+  .card { background: #fff; border-radius: 8px; border: 1px solid #e0ddd5; padding: 20px 24px; margin-bottom: 18px; }
+  .card-red { border-left: 5px solid #e63946; }
+  .card-amber { border-left: 5px solid #f4a261; }
+  .card-green { border-left: 5px solid #2a9d8f; }
+  .card-blue { border-left: 5px solid #457b9d; }
+  .prob-tag { display: inline-block; font-size: 11px; font-family: Arial; font-weight: 700; padding: 3px 10px; border-radius: 12px; margin-bottom: 10px; }
+  .very-high { background: #fde8e8; color: #c0392b; }
+  .high { background: #fff3cd; color: #856404; }
+  .moderate { background: #d4edda; color: #155724; }
+  .marks-tag { display: inline-block; font-size: 11px; font-family: Arial; padding: 3px 10px; border-radius: 12px; background: #e8e0f5; color: #5a2d82; font-weight: 700; margin-left: 8px; }
+  .unit-tag { font-size: 11px; font-family: Arial; color: #666; margin-left: 8px; }
+  ul, ol { padding-left: 22px; margin-bottom: 12px; }
+  li { margin-bottom: 6px; font-size: 15px; }
+  .answer-box { background: #fffbf0; border: 1px solid #f0e0a0; border-radius: 8px; padding: 20px 24px; margin: 14px 0 24px; }
+  .answer-box h4 { color: #7c5c00; border-bottom: 1px solid #f0e0a0; padding-bottom: 8px; margin-bottom: 14px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .unit-box { background: #1a1a2e; color: #fff; padding: 16px 20px; border-radius: 8px; }
+  .unit-box h4 { color: #e2c36b; font-size: 14px; margin-bottom: 8px; }
+  .unit-box p { color: #ccc; font-size: 13px; margin: 0; }
+  .survival { background: #1a1a2e; color: #fff; border-radius: 10px; padding: 26px; margin-top: 24px; }
+  .survival h3 { color: #e2c36b; border-bottom: 1px solid #333; padding-bottom: 8px; }
+  .survival li { color: #ddd; font-size: 14px; font-family: Arial; }
+  .mnemonic { background: #e8f4f8; border-left: 4px solid #0077b6; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 14px; font-family: Arial; }
+  .formula { background: #f0f8e8; border: 1px solid #a8d5a2; border-radius: 6px; padding: 12px 16px; font-family: monospace; font-size: 14px; margin: 10px 0; }
+  .warning { background: #fff3cd; border: 1px solid #ffc107; padding: 10px 16px; border-radius: 6px; font-size: 13px; font-family: Arial; margin: 10px 0; }
+  .skip { background: #f8d7da; border-left: 4px solid #dc3545; padding: 10px 16px; border-radius: 0 6px 6px 0; font-size: 13px; font-family: Arial; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14px; }
+  th { background: #1a1a2e; color: #e2c36b; padding: 10px 14px; text-align: left; }
+  td { border: 1px solid #ddd; padding: 9px 14px; }
+  tr:nth-child(even) td { background: #f8f8f8; }
+  .divider { border: none; border-top: 2px solid #e0ddd5; margin: 30px 0; }
+  .highlight { background: #fff3cd; padding: 2px 6px; border-radius: 3px; }
+  @media(max-width:700px) { .grid2, .grid3 { grid-template-columns: 1fr; } .page { padding: 20px; } .nav { padding: 0 10px; } .header { padding: 20px; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>GGSIPU BBA (B&amp;I) — Semester VI <span class="badge">EXAM GUIDE 2024–25</span></h1>
+  <p>Complete Predicted Question Bank · Full 15-Mark Answers · Unit Weightage · Survival Kit · All Subjects</p>
+</div>
+
+<div class="nav">
+  <button class="active" onclick="show('home')">🏠 Overview</button>
+  <button onclick="show('pm')">302 — Project Mgmt</button>
+  <button onclick="show('hrm')">304 — HRM</button>
+  <button onclick="show('hra')">306 — HR Analytics</button>
+  <button onclick="show('asp')">308 — Adv &amp; Sales Promo</button>
+  <button onclick="show('mfps')">310 — Marketing Fin. Products</button>
+  <button onclick="show('bl')">312 — Banking Laws</button>
+</div>
+
+<!-- ==================== HOME ==================== -->
+<div id="home" class="page active">
+  <h2>6th Semester — Subject Overview &amp; Strategy</h2>
+  <div class="grid3">
+    <div class="unit-box"><h4>302 · Project Management</h4><p>3 Credits · PERT/CPM Numericals + Theory · High scoring</p></div>
+    <div class="unit-box"><h4>304 · Human Resource Management</h4><p>4 Credits · Theory heavy · Easy if prepared</p></div>
+    <div class="unit-box"><h4>306 · HR Analytics</h4><p>4 Credits · New subject · Conceptual + Frameworks</p></div>
+    <div class="unit-box"><h4>308 · Advertising &amp; Sales Promo</h4><p>4 Credits · Elective · Models &amp; Strategy focus</p></div>
+    <div class="unit-box"><h4>310 · Marketing of Fin. Products</h4><p>4 Credits · Elective · Retail Banking + Mutual Funds</p></div>
+    <div class="unit-box"><h4>312 · Banking Laws &amp; Practice</h4><p>3 Credits · Elective · Acts &amp; Provisions</p></div>
+  </div>
+
+  <h2>GGSIPU Exam Paper Pattern (End-Sem)</h2>
+  <div class="card card-blue">
+    <table>
+      <tr><th>Section</th><th>Type</th><th>Questions</th><th>Marks</th><th>Strategy</th></tr>
+      <tr><td>Section A</td><td>Short Answer</td><td>5 out of 8</td><td>5×5 = 25</td><td>Define + 2-3 points + example</td></tr>
+      <tr><td>Section B</td><td>Long Answer</td><td>5 out of 8</td><td>5×15 = 75</td><td>Full structure, headings, conclusion</td></tr>
+      <tr><td colspan="4"><strong>Total: 100 Marks | Time: 3 Hours</strong></td><td>Internal: 40 marks</td></tr>
+    </table>
+  </div>
+
+  <h2>Golden Rules for GGSIPU Exam Writing</h2>
+  <div class="card card-green">
+    <ul>
+      <li><strong>Start every 15-mark answer with a 2-line introduction</strong> defining the core term.</li>
+      <li><strong>Use numbered points and subheadings</strong> — GGSIPU checkers scan, not read.</li>
+      <li><strong>Always end with "Conclusion"</strong> — even 3 lines adds marks.</li>
+      <li><strong>Diagrams earn extra marks</strong> — even rough sketches of PERT network, org charts, etc.</li>
+      <li><strong>Attempt all questions</strong> — partial credit is given. Never leave blank.</li>
+      <li><strong>Section A answers</strong> should be 6–8 lines minimum.</li>
+      <li><strong>For 15-mark questions</strong>, aim for 3–4 pages in answer sheet.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ==================== 302 PROJECT MANAGEMENT ==================== -->
+<div id="pm" class="page">
+  <h2>302 — Project Management (3 Credits)</h2>
+
+  <div class="grid3">
+    <div class="unit-box"><h4>Unit I (10 hrs)</h4><p>Project basics, Life Cycle, Idea Generation &amp; Screening</p></div>
+    <div class="unit-box"><h4>Unit II (12 hrs)</h4><p>Technical &amp; Market Analysis, PERT, CPM, Critical Path</p></div>
+    <div class="unit-box"><h4>Unit III (10 hrs)</h4><p>Financing of Projects — Sources, Debt, Equity, VC</p></div>
+    <div class="unit-box"><h4>Unit IV (10 hrs)</h4><p>Project Evaluation &amp; Control, Social Cost-Benefit, Emerging Concepts</p></div>
+  </div>
+
+  <h2>Unit Weightage Prediction</h2>
+  <table>
+    <tr><th>Unit</th><th>Expected Questions</th><th>Key Focus</th><th>Weightage</th></tr>
+    <tr><td>Unit II</td><td>2 Long + 1 Short</td><td>PERT/CPM Numerical + Theory</td><td>⭐⭐⭐⭐⭐</td></tr>
+    <tr><td>Unit I</td><td>1 Long + 1 Short</td><td>Project Life Cycle, Idea Screening</td><td>⭐⭐⭐⭐</td></tr>
+    <tr><td>Unit III</td><td>1 Long + 1 Short</td><td>Sources of Finance</td><td>⭐⭐⭐</td></tr>
+    <tr><td>Unit IV</td><td>1 Long</td><td>Social Cost-Benefit Analysis</td><td>⭐⭐⭐</td></tr>
+  </table>
+
+  <h2>Predicted Question Bank — 302</h2>
+
+  <div class="card card-red">
+    <span class="prob-tag very-high">VERY HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit II</span>
+    <h3>Q1. What is PERT? Explain the steps in PERT with a numerical example. Differentiate between PERT and CPM.</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> PERT (Programme Evaluation and Review Technique) is a network analysis technique used for planning, scheduling, and controlling complex projects involving uncertain activity durations. It was developed by the U.S. Navy in 1958 for the Polaris missile project.</p>
+      <h4>Definition:</h4>
+      <p>PERT is a statistical tool used in project management that is designed to analyze and represent the tasks involved in completing a given project. It focuses on time management, especially when activity durations are uncertain.</p>
+      <h4>Three Time Estimates in PERT:</h4>
+      <ul>
+        <li><strong>Optimistic Time (to):</strong> Minimum time if everything goes perfectly.</li>
+        <li><strong>Most Likely Time (tm):</strong> Normal realistic estimate.</li>
+        <li><strong>Pessimistic Time (tp):</strong> Maximum time if everything goes wrong.</li>
+      </ul>
+      <div class="formula">Expected Time (te) = (to + 4tm + tp) / 6<br>Variance (σ²) = [(tp - to) / 6]²</div>
+      <h4>Steps in PERT Analysis:</h4>
+      <ol>
+        <li><strong>Identify Activities:</strong> List all activities/tasks required for the project.</li>
+        <li><strong>Determine Sequence:</strong> Establish precedence relationships — which activities must come before others.</li>
+        <li><strong>Draw Network Diagram:</strong> Use nodes (events) and arrows (activities) to represent the project.</li>
+        <li><strong>Estimate Time:</strong> For each activity, estimate to, tm, tp and calculate te.</li>
+        <li><strong>Calculate Earliest Start (ES) &amp; Earliest Finish (EF):</strong> Forward pass through network.</li>
+        <li><strong>Calculate Latest Start (LS) &amp; Latest Finish (LF):</strong> Backward pass through network.</li>
+        <li><strong>Calculate Float/Slack:</strong> Float = LS - ES (or LF - EF)</li>
+        <li><strong>Identify Critical Path:</strong> Path where Float = 0 on all activities.</li>
+      </ol>
+      <h4>Numerical Example:</h4>
+      <table>
+        <tr><th>Activity</th><th>to</th><th>tm</th><th>tp</th><th>te = (to+4tm+tp)/6</th></tr>
+        <tr><td>A (1→2)</td><td>2</td><td>4</td><td>6</td><td>(2+16+6)/6 = 4</td></tr>
+        <tr><td>B (1→3)</td><td>3</td><td>5</td><td>7</td><td>(3+20+7)/6 = 5</td></tr>
+        <tr><td>C (2→4)</td><td>4</td><td>6</td><td>8</td><td>(4+24+8)/6 = 6</td></tr>
+        <tr><td>D (3→4)</td><td>1</td><td>3</td><td>5</td><td>(1+12+5)/6 = 3</td></tr>
+        <tr><td>E (4→5)</td><td>2</td><td>4</td><td>6</td><td>4</td></tr>
+      </table>
+      <p>Network Paths: 1→2→4→5 = 4+6+4 = <strong>14 weeks</strong> | 1→3→4→5 = 5+3+4 = <strong>12 weeks</strong></p>
+      <p><strong>Critical Path = 1→2→4→5 (14 weeks)</strong> — longest path, no float.</p>
+      <h4>Difference between PERT and CPM:</h4>
+      <table>
+        <tr><th>Basis</th><th>PERT</th><th>CPM</th></tr>
+        <tr><td>Full Form</td><td>Programme Evaluation and Review Technique</td><td>Critical Path Method</td></tr>
+        <tr><td>Nature</td><td>Probabilistic (uncertain durations)</td><td>Deterministic (known durations)</td></tr>
+        <tr><td>Time Estimates</td><td>Three (to, tm, tp)</td><td>One (single estimate)</td></tr>
+        <tr><td>Focus</td><td>Time management</td><td>Time-cost trade-off</td></tr>
+        <tr><td>Use</td><td>R&amp;D, new projects</td><td>Construction, repetitive work</td></tr>
+        <tr><td>Cost</td><td>Not considered primarily</td><td>Cost optimization is key</td></tr>
+        <tr><td>Crashing</td><td>Not applicable</td><td>Cost crashing done</td></tr>
+        <tr><td>Critical Path</td><td>May be probabilistic</td><td>Definite single critical path</td></tr>
+      </table>
+      <p><strong>Conclusion:</strong> PERT and CPM are powerful project management tools. While PERT is ideal for R&amp;D and innovative projects where uncertainty exists, CPM is better suited for repetitive construction or industrial projects. Both help managers plan, schedule, and control projects efficiently.</p>
+    </div>
+  </div>
+
+  <div class="card card-red">
+    <span class="prob-tag very-high">VERY HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit I</span>
+    <h3>Q2. Explain the Project Life Cycle. What are the phases of a project? Discuss the Generation and Screening of Project Ideas.</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> A project is a temporary endeavor undertaken to create a unique product, service, or result. Every project passes through a defined series of stages called the Project Life Cycle. Understanding this cycle is essential for effective project planning and execution.</p>
+      <h4>Project Life Cycle — Phases:</h4>
+      <ol>
+        <li><strong>Initiation Phase:</strong>
+          <ul>
+            <li>Project idea is born and feasibility is assessed.</li>
+            <li>Project charter is created — defines objectives, scope, stakeholders.</li>
+            <li>Key question: "Is the project worth doing?"</li>
+          </ul>
+        </li>
+        <li><strong>Planning Phase:</strong>
+          <ul>
+            <li>Detailed planning of scope, schedule, budget, and resources.</li>
+            <li>Work Breakdown Structure (WBS) is created.</li>
+            <li>Risk analysis and stakeholder management planning done.</li>
+          </ul>
+        </li>
+        <li><strong>Execution Phase:</strong>
+          <ul>
+            <li>Project plan is put into action.</li>
+            <li>Resources are allocated, teams are formed.</li>
+            <li>Deliverables are produced.</li>
+          </ul>
+        </li>
+        <li><strong>Monitoring and Controlling Phase:</strong>
+          <ul>
+            <li>Runs simultaneously with execution.</li>
+            <li>Performance is tracked against plan.</li>
+            <li>Corrective actions taken when deviations found.</li>
+          </ul>
+        </li>
+        <li><strong>Closure Phase:</strong>
+          <ul>
+            <li>Project deliverables are formally accepted.</li>
+            <li>Post-project evaluation / audit conducted.</li>
+            <li>Lessons learned documented.</li>
+          </ul>
+        </li>
+      </ol>
+      <h4>Generation of Project Ideas:</h4>
+      <p>Project ideas can emerge from various sources:</p>
+      <ul>
+        <li><strong>Market analysis:</strong> Identifying unmet needs or gaps in the market.</li>
+        <li><strong>Government policies:</strong> New incentives, subsidies, or priority sectors.</li>
+        <li><strong>Import substitution:</strong> Products currently imported that can be produced locally.</li>
+        <li><strong>New technology:</strong> Innovations creating new product/service possibilities.</li>
+        <li><strong>Competitor analysis:</strong> Products successful elsewhere.</li>
+        <li><strong>Customer feedback:</strong> Direct demand from users.</li>
+        <li><strong>Natural resources:</strong> Location-specific opportunities.</li>
+      </ul>
+      <h4>Screening of Project Ideas (Preliminary Screening):</h4>
+      <p>Before detailed analysis, ideas are screened using:</p>
+      <ul>
+        <li><strong>Compatibility with promoter:</strong> Skills, experience, interests of entrepreneur.</li>
+        <li><strong>Consistency with government priorities:</strong> Government schemes and sectors promoted.</li>
+        <li><strong>Availability of inputs:</strong> Raw material, technology, manpower availability.</li>
+        <li><strong>Adequacy of market:</strong> Is the target market large enough?</li>
+        <li><strong>Reasonableness of cost:</strong> Capital requirement vs. available funds.</li>
+        <li><strong>Risk profile:</strong> Acceptable level of business and financial risk.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> A well-structured project life cycle provides a roadmap for successful project completion. Careful idea generation and rigorous preliminary screening ensure that resources are invested only in viable, feasible, and profitable projects.</p>
+    </div>
+  </div>
+
+  <div class="card card-amber">
+    <span class="prob-tag high">HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit III</span>
+    <h3>Q3. Explain the various sources of long-term and short-term financing of projects.</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> Every project requires adequate funding from its initiation to completion. Project financing refers to the process of raising funds through various sources to implement a project. The financing structure significantly affects the risk and return profile of a project.</p>
+      <h4>Classification of Project Finance Sources:</h4>
+      <h4>A. Long-Term Sources of Finance:</h4>
+      <ol>
+        <li><strong>Equity Share Capital:</strong> Permanent capital raised from shareholders. No fixed obligation to pay dividends. Risk capital — shareholders bear project risk.</li>
+        <li><strong>Preference Share Capital:</strong> Fixed dividend, priority over equity in assets/dividends. No voting rights generally. Hybrid between debt and equity.</li>
+        <li><strong>Debentures/Bonds:</strong> Debt instruments with fixed interest. Can be secured or unsecured. Types: Convertible, Non-convertible, Zero-coupon.</li>
+        <li><strong>Term Loans from Banks/FIs:</strong> Long-term loans from commercial banks and DFIs (IDBI, IFCI, SIDBI). Repayable over 5–10 years. Security required.</li>
+        <li><strong>Retained Earnings:</strong> Internal accrual — profits ploughed back. No dilution of ownership. Available only to existing firms.</li>
+        <li><strong>Venture Capital:</strong> Equity investment by VCFs in high-risk, high-growth startups. Investor takes equity stake and exits via IPO or buyout.</li>
+        <li><strong>Angel Investors:</strong> High net-worth individuals funding early-stage projects for equity/convertible debt.</li>
+      </ol>
+      <h4>B. Short-Term Sources of Finance (Working Capital):</h4>
+      <ol>
+        <li><strong>Bank Overdraft/Cash Credit:</strong> Flexible borrowing up to sanctioned limit. Interest charged only on amount used.</li>
+        <li><strong>Trade Credit:</strong> Credit extended by suppliers of raw materials and goods. Interest-free source of finance.</li>
+        <li><strong>Commercial Paper (CP):</strong> Short-term unsecured promissory note issued by creditworthy companies.</li>
+        <li><strong>Factoring:</strong> Sale of receivables to a factor at a discount for immediate cash.</li>
+      </ol>
+      <h4>Capital Structure — Debt vs. Equity Trade-off:</h4>
+      <table>
+        <tr><th>Basis</th><th>Debt Financing</th><th>Equity Financing</th></tr>
+        <tr><td>Cost</td><td>Lower (tax deductible)</td><td>Higher (dividends not tax deductible)</td></tr>
+        <tr><td>Risk</td><td>Financial risk increases</td><td>No fixed obligation</td></tr>
+        <tr><td>Control</td><td>No dilution</td><td>Dilution of ownership</td></tr>
+        <tr><td>Repayment</td><td>Compulsory</td><td>No compulsion</td></tr>
+      </table>
+      <p><strong>Conclusion:</strong> The choice of financing sources depends on the size, nature, risk profile, and lifecycle stage of the project. An optimal mix of debt and equity minimizes the Weighted Average Cost of Capital (WACC) and maximizes project value.</p>
+    </div>
+  </div>
+
+  <div class="card card-amber">
+    <span class="prob-tag high">HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit IV</span>
+    <h3>Q4. Explain Social Cost-Benefit Analysis (SCBA) of a project. How does it differ from commercial profitability?</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> Social Cost-Benefit Analysis (SCBA) is a systematic process for calculating and comparing the benefits and costs of a project from the perspective of society as a whole, not just the investing entity. It is widely used by governments and development agencies to evaluate public sector projects.</p>
+      <h4>Concept of SCBA:</h4>
+      <p>In commercial analysis, the focus is on private profits — revenue vs. expenditure. In SCBA, all impacts on society are considered — economic, social, environmental, and distributional effects.</p>
+      <h4>Key Components of SCBA:</h4>
+      <ol>
+        <li><strong>Shadow Prices:</strong> Market prices are adjusted to reflect true social value. Example: Overvalued foreign exchange is corrected using the shadow exchange rate.</li>
+        <li><strong>Social Discount Rate:</strong> Rate used to discount future social benefits/costs to present value. Usually lower than commercial rate.</li>
+        <li><strong>Externalities:</strong> External effects on third parties. Positive externalities (job creation) add to social benefit; negative externalities (pollution) add to social cost.</li>
+        <li><strong>Employment Effects:</strong> Projects creating jobs have higher social value than capital-intensive ones in labor surplus economies.</li>
+        <li><strong>Distribution Effects:</strong> Who benefits? Projects benefiting poor communities get higher social weight.</li>
+      </ol>
+      <h4>SCBA vs. Commercial Profitability:</h4>
+      <table>
+        <tr><th>Basis</th><th>Commercial Analysis</th><th>Social Cost-Benefit Analysis</th></tr>
+        <tr><td>Perspective</td><td>Firm/investor</td><td>Society as a whole</td></tr>
+        <tr><td>Prices used</td><td>Market prices</td><td>Shadow/accounting prices</td></tr>
+        <tr><td>Discount rate</td><td>Commercial/market rate</td><td>Social discount rate</td></tr>
+        <tr><td>Externalities</td><td>Ignored</td><td>Explicitly included</td></tr>
+        <tr><td>Employment</td><td>Cost only</td><td>Benefit (social value)</td></tr>
+        <tr><td>Goal</td><td>Profit maximization</td><td>Social welfare maximization</td></tr>
+      </table>
+      <h4>Applications:</h4>
+      <ul>
+        <li>Infrastructure projects — dams, highways, power plants.</li>
+        <li>Public health and education projects.</li>
+        <li>Environmental conservation projects.</li>
+        <li>World Bank and ADB funded projects mandatorily use SCBA.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> SCBA bridges the gap between private profitability and social welfare. A project may be commercially unviable yet socially desirable (e.g., rural electrification). SCBA ensures that public resources are allocated to maximize overall social welfare rather than just financial returns.</p>
+    </div>
+  </div>
+
+  <h2>CPM — Critical Path Method (Numerical Focus)</h2>
+  <div class="card card-blue">
+    <h3>CPM Key Formulas — Must Memorize</h3>
+    <div class="formula">Earliest Start (ES) = MAX of all EF of predecessors<br>Earliest Finish (EF) = ES + Duration<br>Latest Finish (LF) = MIN of all LS of successors<br>Latest Start (LS) = LF - Duration<br>Total Float = LS - ES = LF - EF<br>Free Float = ES(next activity) - EF(current activity)<br>Critical Path = Path where Total Float = 0</div>
+    <div class="warning">⚠️ Common Mistakes: 1) Forgetting to take MAX in forward pass and MIN in backward pass. 2) Confusing Total Float with Free Float. 3) Not identifying ALL critical paths when multiple exist.</div>
+  </div>
+
+  <div class="survival">
+    <h3>🚀 302 Project Management — Survival Kit</h3>
+    <h4 style="color:#e2c36b; margin-top:14px;">Top 5 Must-Do Questions:</h4>
+    <ol><li style="color:#ddd; font-size:14px;">PERT numerical + PERT vs CPM</li><li style="color:#ddd; font-size:14px;">Project Life Cycle phases</li><li style="color:#ddd; font-size:14px;">Sources of project financing</li><li style="color:#ddd; font-size:14px;">Social Cost-Benefit Analysis</li><li style="color:#ddd; font-size:14px;">Technical Analysis factors</li></ol>
+    <h4 style="color:#e2c36b; margin-top:14px;">Safe to Skip (Low Priority):</h4>
+    <ul><li style="color:#ddd; font-size:14px;">Post-audit abandonment analysis (very rarely asked)</li><li style="color:#ddd; font-size:14px;">Detailed market survey methodology</li></ul>
+    <h4 style="color:#e2c36b; margin-top:14px;">Memory Tricks:</h4>
+    <div class="mnemonic" style="background:#2a3a5e; color:#ddd; border-color:#e2c36b;">PERT Time Formula → "o + 4m + p over 6" = Think "One-Four-One divided by six"<br>Project Life Cycle → <strong>IPEMEC</strong>: Initiation → Planning → Execution → Monitoring → Evaluation → Closure</div>
+  </div>
+</div>
+
+<!-- ==================== 304 HRM ==================== -->
+<div id="hrm" class="page">
+  <h2>304 — Human Resource Management (4 Credits)</h2>
+
+  <div class="grid3">
+    <div class="unit-box"><h4>Unit I (14 hrs)</h4><p>HRM functions, HRIS, e-HRM, Workforce diversity</p></div>
+    <div class="unit-box"><h4>Unit II (14 hrs)</h4><p>HR Planning, Job Analysis, Recruitment &amp; Selection</p></div>
+    <div class="unit-box"><h4>Unit III (14 hrs)</h4><p>Training &amp; Development methods</p></div>
+    <div class="unit-box"><h4>Unit IV (14 hrs)</h4><p>Performance Appraisal, Compensation, Industrial Relations</p></div>
+  </div>
+
+  <h2>Unit Weightage Prediction</h2>
+  <table>
+    <tr><th>Unit</th><th>Expected Qs</th><th>Key Focus</th><th>Weightage</th></tr>
+    <tr><td>Unit II</td><td>2 Long</td><td>Recruitment, Selection, Job Analysis</td><td>⭐⭐⭐⭐⭐</td></tr>
+    <tr><td>Unit IV</td><td>2 Long</td><td>Performance Appraisal, Compensation</td><td>⭐⭐⭐⭐⭐</td></tr>
+    <tr><td>Unit I</td><td>1 Long + 1 Short</td><td>HRM vs Strategic HRM, HRIS</td><td>⭐⭐⭐⭐</td></tr>
+    <tr><td>Unit III</td><td>1 Long</td><td>Training methods</td><td>⭐⭐⭐</td></tr>
+  </table>
+
+  <h2>Predicted Question Bank — 304</h2>
+
+  <div class="card card-red">
+    <span class="prob-tag very-high">VERY HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit IV</span>
+    <h3>Q1. What is Performance Appraisal? Explain its objectives, methods, and importance. What are the common errors in performance appraisal?</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> Performance Appraisal is a systematic, periodic, and impartial rating of an employee's excellence in matters pertaining to their present job and their potential for a better job. It is a formal process by which management evaluates employee performance relative to established standards.</p>
+      <h4>Objectives of Performance Appraisal:</h4>
+      <ul>
+        <li>Determine compensation increments and promotions.</li>
+        <li>Identify training and development needs.</li>
+        <li>Provide feedback to employees about their performance.</li>
+        <li>Facilitate HR planning and succession planning.</li>
+        <li>Motivate employees through recognition of achievement.</li>
+        <li>Serve as basis for transfer, demotion, or termination decisions.</li>
+      </ul>
+      <h4>Methods of Performance Appraisal:</h4>
+      <h4>A. Traditional Methods:</h4>
+      <ol>
+        <li><strong>Ranking Method:</strong> Employees ranked from best to worst. Simple but subjective.</li>
+        <li><strong>Graphic Rating Scale:</strong> Rates employees on various traits (quality, attendance, initiative) on a scale of 1–5 or 1–10.</li>
+        <li><strong>Checklist Method:</strong> Supervisor marks "Yes/No" against behavioral statements.</li>
+        <li><strong>Critical Incident Method:</strong> Records specific good and bad incidents during appraisal period.</li>
+        <li><strong>Essay Method:</strong> Supervisor writes free-form narrative about employee performance.</li>
+        <li><strong>Forced Distribution Method:</strong> Employees forced into a bell-curve — top 20%, average 60%, bottom 20%.</li>
+      </ol>
+      <h4>B. Modern Methods:</h4>
+      <ol>
+        <li><strong>Management by Objectives (MBO):</strong> Goals set jointly by manager and employee. Performance measured against these goals. Participative and objective.</li>
+        <li><strong>360-Degree Appraisal:</strong> Feedback from all directions — superiors, peers, subordinates, customers, and self. Comprehensive but time-consuming.</li>
+        <li><strong>Behaviourally Anchored Rating Scale (BARS):</strong> Combines graphic scale with critical incidents. Specific behavioral statements anchor each rating point.</li>
+        <li><strong>Assessment Centre:</strong> Multiple evaluators use multiple techniques — in-basket exercises, role plays, group discussions — to assess management potential.</li>
+        <li><strong>Human Resource Accounting:</strong> Measures contribution of human resources in monetary terms.</li>
+      </ol>
+      <h4>Common Errors (Biases) in Performance Appraisal:</h4>
+      <table>
+        <tr><th>Error Type</th><th>Description</th></tr>
+        <tr><td>Halo Effect</td><td>One positive trait influences ratings of all other traits</td></tr>
+        <tr><td>Central Tendency</td><td>Tendency to rate everyone as average — avoids extreme ratings</td></tr>
+        <tr><td>Leniency/Strictness</td><td>Consistently giving too high or too low ratings</td></tr>
+        <tr><td>Recency Effect</td><td>Recent events dominate appraisal, ignoring full-year performance</td></tr>
+        <tr><td>Personal Prejudice</td><td>Bias based on religion, caste, gender, friendship</td></tr>
+        <tr><td>Contrast Error</td><td>Rating influenced by comparison with previous employee appraised</td></tr>
+        <tr><td>First Impression</td><td>Initial judgment colors entire appraisal</td></tr>
+      </table>
+      <p><strong>Conclusion:</strong> Performance appraisal, when conducted objectively and consistently, is a powerful HR tool that aligns individual performance with organizational goals. Modern methods like 360-degree feedback and MBO help overcome traditional limitations and provide a holistic view of employee contribution.</p>
+    </div>
+  </div>
+
+  <div class="card card-red">
+    <span class="prob-tag very-high">VERY HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit II</span>
+    <h3>Q2. Explain the Recruitment and Selection process. Differentiate between Recruitment and Selection. What are the sources of recruitment?</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> Recruitment is the process of searching for prospective employees and stimulating and encouraging them to apply for jobs in an organization. Selection is the process of choosing the most suitable candidate from those who have applied. Together, they form the staffing function of HRM.</p>
+      <h4>Recruitment vs Selection:</h4>
+      <table>
+        <tr><th>Basis</th><th>Recruitment</th><th>Selection</th></tr>
+        <tr><td>Meaning</td><td>Attracting candidates</td><td>Choosing the best candidate</td></tr>
+        <tr><td>Nature</td><td>Positive process</td><td>Negative process (rejection)</td></tr>
+        <tr><td>Outcome</td><td>Pool of applicants</td><td>One selected candidate</td></tr>
+        <tr><td>Cost</td><td>Lower</td><td>Higher (multiple steps)</td></tr>
+        <tr><td>Time</td><td>Shorter</td><td>Longer</td></tr>
+        <tr><td>Contract</td><td>No contract formed</td><td>Employment contract formed</td></tr>
+      </table>
+      <h4>Sources of Recruitment:</h4>
+      <h4>A. Internal Sources:</h4>
+      <ul>
+        <li><strong>Promotion:</strong> Moving employees to higher positions.</li>
+        <li><strong>Transfer:</strong> Moving employees between departments/locations.</li>
+        <li><strong>Employee Referrals:</strong> Existing employees recommend candidates.</li>
+        <li><strong>Re-hiring former employees:</strong> Rehiring ex-employees with good records.</li>
+      </ul>
+      <h4>B. External Sources:</h4>
+      <ul>
+        <li><strong>Advertisement:</strong> Newspapers, online job portals (Naukri, LinkedIn, Indeed).</li>
+        <li><strong>Campus Recruitment:</strong> Hiring fresh graduates from colleges/universities.</li>
+        <li><strong>Employment Agencies:</strong> Government/private placement agencies.</li>
+        <li><strong>Walk-in Interviews:</strong> Open recruitment drives.</li>
+        <li><strong>Headhunting/Executive Search:</strong> For senior positions, specialized search firms used.</li>
+        <li><strong>Social Media:</strong> LinkedIn, Twitter for passive candidate sourcing.</li>
+      </ul>
+      <h4>Selection Process — Steps:</h4>
+      <ol>
+        <li>Preliminary Screening of Applications</li>
+        <li>Selection Tests (Aptitude, Personality, Skill tests)</li>
+        <li>Employment Interview</li>
+        <li>Background and Reference Check</li>
+        <li>Medical/Physical Examination</li>
+        <li>Final Selection and Job Offer</li>
+        <li>Induction/Onboarding</li>
+      </ol>
+      <p><strong>Conclusion:</strong> Effective recruitment and selection are critical to organizational success. The right hiring decision reduces turnover, improves performance, and builds organizational capability. A systematic, unbiased process ensures the best talent is identified and retained.</p>
+    </div>
+  </div>
+
+  <div class="card card-amber">
+    <span class="prob-tag high">HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit III</span>
+    <h3>Q3. What is Training and Development? Explain the various methods of Training. How is Training Need Analysis (TNA) conducted?</h3>
+    <div class="answer-box">
+      <h4>★ MODEL ANSWER (Key Points)</h4>
+      <p><strong>Training:</strong> Systematic learning process to improve current job performance. Short-term, job-specific, skill-oriented.</p>
+      <p><strong>Development:</strong> Long-term growth of employee's overall abilities and personality for future roles. Broader in scope than training.</p>
+      <h4>Methods of Training:</h4>
+      <h4>A. On-the-Job Training (OJT):</h4>
+      <ul>
+        <li><strong>Job Rotation:</strong> Employee moved through different jobs/departments to gain experience.</li>
+        <li><strong>Coaching:</strong> Continuous one-on-one guidance from supervisor.</li>
+        <li><strong>Mentoring:</strong> Senior experienced employee guides junior employee.</li>
+        <li><strong>Apprenticeship:</strong> Learn skilled trade under expert (e.g., craft, medicine).</li>
+        <li><strong>Understudy:</strong> Trainee acts as backup/assistant to manager.</li>
+      </ul>
+      <h4>B. Off-the-Job Training:</h4>
+      <ul>
+        <li><strong>Classroom/Lecture:</strong> Traditional teaching format.</li>
+        <li><strong>Case Study Method:</strong> Analysis of real/simulated business situations.</li>
+        <li><strong>Role Playing:</strong> Act out scenarios to develop interpersonal skills.</li>
+        <li><strong>Vestibule Training:</strong> Replica of workplace environment — reduces production disruption.</li>
+        <li><strong>Sensitivity Training (T-Group):</strong> Improves interpersonal awareness and group dynamics.</li>
+        <li><strong>In-Basket Exercise:</strong> Deal with collection of memos, emails, reports — management decision making training.</li>
+        <li><strong>Management Games/Simulations:</strong> Competitive team-based business simulations.</li>
+        <li><strong>e-Learning/Online Courses:</strong> LMS-based learning, MOOCs, webinars.</li>
+      </ul>
+      <h4>Training Need Analysis (TNA) — Steps:</h4>
+      <ol>
+        <li><strong>Organizational Analysis:</strong> What are organizational goals? What skills are needed?</li>
+        <li><strong>Task/Job Analysis:</strong> What are the specific duties and knowledge needed for each role?</li>
+        <li><strong>Person Analysis:</strong> Do current employees have the required skills? Gap identification.</li>
+        <li><strong>Priority Setting:</strong> Which training needs are most urgent?</li>
+        <li><strong>Design Training Program:</strong> Based on identified gaps.</li>
+      </ol>
+      <p><strong>Conclusion:</strong> Training and development are not costs but investments. Organizations that invest in human capital consistently outperform those that don't. A systematic TNA ensures training resources are targeted where they create maximum impact.</p>
+    </div>
+  </div>
+
+  <div class="card card-amber">
+    <span class="prob-tag high">HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit IV</span>
+    <h3>Q4. Explain the concept of Compensation Management. What are the components of compensation? Discuss the factors affecting compensation.</h3>
+    <div class="answer-box">
+      <h4>★ MODEL ANSWER (Key Points)</h4>
+      <p><strong>Compensation:</strong> Total financial and non-financial rewards given to employees in exchange for their work. It encompasses all forms of pay, benefits, and services that employees receive as part of their employment relationship.</p>
+      <h4>Components of Compensation:</h4>
+      <h4>A. Direct Compensation (Financial):</h4>
+      <ul>
+        <li><strong>Base Pay/Basic Salary:</strong> Fixed component of wages.</li>
+        <li><strong>Variable Pay:</strong> Performance-linked pay, bonuses, commissions.</li>
+        <li><strong>Allowances:</strong> HRA, DA, Transport, Medical allowances.</li>
+        <li><strong>Incentives:</strong> Piece-rate, profit sharing, ESOPs (Employee Stock Options).</li>
+      </ul>
+      <h4>B. Indirect Compensation (Benefits):</h4>
+      <ul>
+        <li>Provident Fund (PF), Gratuity, Pension</li>
+        <li>Health and Life Insurance</li>
+        <li>Paid leave — Earned Leave, Casual Leave, Sick Leave</li>
+        <li>Company car, housing, canteen facilities</li>
+        <li>Education/training reimbursement</li>
+      </ul>
+      <h4>Factors Affecting Compensation:</h4>
+      <table>
+        <tr><th>Internal Factors</th><th>External Factors</th></tr>
+        <tr><td>Job evaluation results</td><td>Market wage rates</td></tr>
+        <tr><td>Employee performance</td><td>Labor laws and regulations</td></tr>
+        <tr><td>Company's ability to pay</td><td>Cost of living index</td></tr>
+        <tr><td>Company HR policy</td><td>Trade union bargaining</td></tr>
+        <tr><td>Job worth/level</td><td>Industry standards</td></tr>
+      </table>
+      <p><strong>Pay Band/Broad Banding:</strong> Consolidating multiple pay grades into fewer, wider salary ranges, giving more flexibility in rewarding performance without promotion.</p>
+      <p><strong>Conclusion:</strong> Effective compensation management is critical for attracting, retaining, and motivating talent. A well-designed compensation structure balances internal equity, external competitiveness, and individual performance.</p>
+    </div>
+  </div>
+
+  <div class="survival">
+    <h3>🚀 304 HRM — Survival Kit</h3>
+    <h4 style="color:#e2c36b; margin-top:14px;">Top 5 Must-Do:</h4>
+    <ol><li style="color:#ddd; font-size:14px;">Performance Appraisal — methods &amp; errors</li><li style="color:#ddd; font-size:14px;">Recruitment vs Selection + Sources</li><li style="color:#ddd; font-size:14px;">Training methods (On-job vs Off-job)</li><li style="color:#ddd; font-size:14px;">Compensation components &amp; factors</li><li style="color:#ddd; font-size:14px;">HRM vs Strategic HRM (Unit I — short note)</li></ol>
+    <h4 style="color:#e2c36b; margin-top:14px;">Memory Tricks:</h4>
+    <div class="mnemonic" style="background:#2a3a5e; color:#ddd; border-color:#e2c36b;">Appraisal Errors → <strong>HCRLPC</strong>: Halo, Central tendency, Recency, Leniency, Prejudice, Contrast<br>Selection Steps → <strong>PSIBMJ</strong>: Preliminary → Screening → Interview → Background → Medical → Job offer</div>
+  </div>
+</div>
+
+<!-- ==================== 306 HR ANALYTICS ==================== -->
+<div id="hra" class="page">
+  <h2>306 — HR Analytics (4 Credits)</h2>
+  <div class="card card-blue" style="margin-bottom:20px;">
+    <p>⚡ <strong>Note:</strong> This is a relatively new subject. Questions tend to be conceptual and framework-based. Examiners favor LAMP Framework, KPIs, Workforce Planning, and Talent Analytics.</p>
+  </div>
+
+  <div class="grid3">
+    <div class="unit-box"><h4>Unit I (14 hrs)</h4><p>HR Analytics basics, LAMP, HCM21, Problem Solving Framework</p></div>
+    <div class="unit-box"><h4>Unit II (14 hrs)</h4><p>HR Metrics, KPIs, Benchmarking, Dashboarding, HR Scorecard</p></div>
+    <div class="unit-box"><h4>Unit III (14 hrs)</h4><p>Workforce Planning, Job Analysis, Job Redesign</p></div>
+    <div class="unit-box"><h4>Unit IV (14 hrs)</h4><p>Talent Analytics, Employee Engagement, Culture Fit</p></div>
+  </div>
+
+  <h2>Predicted Question Bank — 306</h2>
+
+  <div class="card card-red">
+    <span class="prob-tag very-high">VERY HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit I</span>
+    <h3>Q1. What is HR Analytics? Explain the LAMP Framework and HCM21 Framework in detail.</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> HR Analytics (also called People Analytics or Workforce Analytics) is the practice of using data, statistical analysis, and predictive modeling to make better human resource management decisions. It transforms HR from a cost center to a strategic business partner.</p>
+      <h4>Types/Levels of HR Analytics:</h4>
+      <ul>
+        <li><strong>Descriptive Analytics:</strong> What happened? (Turnover rate, absenteeism rate)</li>
+        <li><strong>Diagnostic Analytics:</strong> Why did it happen? (Root cause analysis)</li>
+        <li><strong>Predictive Analytics:</strong> What will happen? (Turnover prediction models)</li>
+        <li><strong>Prescriptive Analytics:</strong> What should we do? (Action recommendations)</li>
+      </ul>
+      <h4>The LAMP Framework (Boudreau &amp; Ramstad):</h4>
+      <p>LAMP stands for <strong>Logic, Analytics, Measures, and Process</strong>. It is a decision-science framework that goes beyond traditional HR measurement.</p>
+      <table>
+        <tr><th>Component</th><th>Meaning</th><th>Example</th></tr>
+        <tr><td><strong>L — Logic</strong></td><td>The strategic story/rationale that explains why HR elements matter. "Why does this measure matter to business outcomes?"</td><td>Why does engagement affect customer satisfaction?</td></tr>
+        <tr><td><strong>A — Analytics</strong></td><td>The data analysis and statistical tools to draw insights from HR data.</td><td>Regression analysis linking training to productivity</td></tr>
+        <tr><td><strong>M — Measures</strong></td><td>The data and metrics collected — both quantity and quality. Right measures must be collected.</td><td>Turnover rate, cost per hire, time to fill</td></tr>
+        <tr><td><strong>P — Process</strong></td><td>How decisions are made and implemented. Change management and stakeholder buy-in.</td><td>HR dashboard review process with business leaders</td></tr>
+      </table>
+      <p>Key Insight: Most HR functions focus only on M (Measures). LAMP insists that analytics must be driven by Logic (business strategy) and implemented through Process (change management).</p>
+      <h4>HCM21 Framework (Human Capital Management for the 21st Century):</h4>
+      <p>The HCM21 model recognizes that traditional HR metrics (headcount, cost) are insufficient for modern competitive environments. It focuses on:</p>
+      <ol>
+        <li><strong>Talent Segmentation:</strong> Identify "pivotal talent pools" — roles that disproportionately drive strategic success.</li>
+        <li><strong>Competitive Sustainability:</strong> Build HR practices that create durable competitive advantage.</li>
+        <li><strong>Talent Inventory:</strong> Real-time data on talent supply (internal) and demand (strategic needs).</li>
+        <li><strong>Talent Ecosystem:</strong> Partners, alumni, contractors — not just employees — matter.</li>
+        <li><strong>Decision Science:</strong> Apply rigorous analytical logic to talent decisions, like investment decisions in finance.</li>
+      </ol>
+      <h4>HR Analytics Problem-Solving Framework:</h4>
+      <ol>
+        <li>Define the business/HR problem</li>
+        <li>Collect relevant data (internal + external)</li>
+        <li>Build and evaluate model</li>
+        <li>Present results with business insights</li>
+        <li>Deploy solution — implement recommendations</li>
+        <li>Critique and refine model continuously</li>
+      </ol>
+      <p><strong>Conclusion:</strong> HR Analytics has shifted HR from being reactive and administrative to proactive and strategic. Frameworks like LAMP and HCM21 provide the theoretical foundation for translating HR data into actionable business insights that drive organizational performance.</p>
+    </div>
+  </div>
+
+  <div class="card card-red">
+    <span class="prob-tag very-high">VERY HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit II</span>
+    <h3>Q2. What are HR Metrics and KPIs? Explain HR Benchmarking and HR Dashboarding. What is an HR Scorecard?</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> In the era of data-driven decision making, HR departments must measure their effectiveness using quantifiable metrics. HR Metrics and KPIs translate people management activities into measurable business outcomes.</p>
+      <h4>HR Metrics:</h4>
+      <p>HR Metrics are quantitative measures used to track and assess the performance of HR activities.</p>
+      <h4>Key HR Metrics — Examiner Favorites:</h4>
+      <table>
+        <tr><th>Metric</th><th>Formula</th><th>Significance</th></tr>
+        <tr><td>Employee Turnover Rate</td><td>(Employees left / Avg headcount) × 100</td><td>Measures retention effectiveness</td></tr>
+        <tr><td>Cost Per Hire</td><td>Total recruitment cost / Number hired</td><td>Recruitment efficiency</td></tr>
+        <tr><td>Time to Fill</td><td>Days from job opening to offer accepted</td><td>Recruitment speed</td></tr>
+        <tr><td>Training ROI</td><td>(Training benefits - Cost) / Cost × 100</td><td>Training effectiveness</td></tr>
+        <tr><td>Absenteeism Rate</td><td>(Days absent / Working days) × 100</td><td>Employee engagement indicator</td></tr>
+        <tr><td>Revenue per Employee</td><td>Total Revenue / Number of Employees</td><td>Workforce productivity</td></tr>
+      </table>
+      <h4>KPIs (Key Performance Indicators):</h4>
+      <p>KPIs are a subset of metrics — specifically those linked to strategic business objectives. The difference: all KPIs are metrics, but not all metrics are KPIs.</p>
+      <p><strong>SMART KPIs:</strong> Specific, Measurable, Achievable, Relevant, Time-bound.</p>
+      <h4>HR Benchmarking:</h4>
+      <p>The process of comparing HR metrics with industry best practices or competitors to identify performance gaps and improvement opportunities.</p>
+      <ul>
+        <li><strong>Internal Benchmarking:</strong> Compare across departments or time periods within the organization.</li>
+        <li><strong>External/Competitive Benchmarking:</strong> Compare with industry peers and best-in-class organizations.</li>
+        <li><strong>Process Benchmarking:</strong> Compare specific HR processes (e.g., onboarding process).</li>
+      </ul>
+      <h4>HR Dashboarding:</h4>
+      <p>An HR Dashboard is a visual display of key HR metrics on a single screen, updated in real-time, enabling quick decision making. Tools used: Tableau, Excel, SAP SuccessFactors, Workday.</p>
+      <p>A good HR Dashboard includes: Headcount, Turnover, Engagement scores, Performance ratings distribution, Training completion rates, Diversity metrics.</p>
+      <h4>HR Scorecard:</h4>
+      <p>The HR Scorecard links HR activities to business strategy using the Balanced Scorecard approach. It measures HR performance across four dimensions:</p>
+      <ul>
+        <li>Financial Perspective: Cost per hire, HR budget variance</li>
+        <li>Customer Perspective: Manager satisfaction with HR, time to fill vacancies</li>
+        <li>Internal Process: Process efficiency, compliance rate</li>
+        <li>Learning &amp; Growth: Training hours, skill development</li>
+      </ul>
+      <p><strong>Conclusion:</strong> HR Metrics, KPIs, benchmarking, dashboards, and scorecards together create an integrated system for measuring, monitoring, and improving HR performance. They make HR accountable to business outcomes and enable evidence-based people management decisions.</p>
+    </div>
+  </div>
+
+  <div class="card card-amber">
+    <span class="prob-tag high">HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit III &amp; IV</span>
+    <h3>Q3. Explain Workforce Planning and its process. What is Employee Engagement and how is it measured?</h3>
+    <div class="answer-box">
+      <h4>★ KEY POINTS ANSWER</h4>
+      <p><strong>Workforce Planning:</strong> The process of analyzing current workforce capabilities, predicting future workforce needs, and developing action plans to bridge the gap. It ensures the right people with right skills are in the right jobs at the right time.</p>
+      <h4>Workforce Planning Process:</h4>
+      <ol>
+        <li><strong>Supply Analysis:</strong> Audit current workforce — headcount, skills, demographics, retirement projections.</li>
+        <li><strong>Demand Analysis:</strong> Forecast future talent needs based on business strategy and growth plans.</li>
+        <li><strong>Gap Analysis:</strong> Surplus or deficit? What skills are missing?</li>
+        <li><strong>Solution Analysis:</strong> Develop strategies — hire, develop, redeploy, outsource, or downsize.</li>
+        <li><strong>Implementation:</strong> Execute action plans — recruitment, training, succession planning.</li>
+        <li><strong>Monitoring:</strong> Track progress and adjust plans.</li>
+      </ol>
+      <p><strong>Markov Chain Analysis:</strong> Used in workforce planning to predict future workforce composition based on historical movement rates (promotions, transfers, attrition).</p>
+      <h4>Employee Engagement:</h4>
+      <p>Employee engagement is the emotional commitment an employee has to the organization and its goals. Engaged employees don't just work for a paycheck — they care about their work and the organization's success.</p>
+      <h4>Drivers of Employee Engagement:</h4>
+      <ul>
+        <li>Meaningful work and clear purpose</li>
+        <li>Supportive leadership and management</li>
+        <li>Growth and development opportunities</li>
+        <li>Recognition and rewards</li>
+        <li>Psychological safety and trust</li>
+      </ul>
+      <h4>Measuring Employee Engagement:</h4>
+      <ul>
+        <li><strong>Employee Engagement Surveys:</strong> Annual/pulse surveys measuring job satisfaction, commitment, advocacy.</li>
+        <li><strong>Net Promoter Score (eNPS):</strong> "Would you recommend this company as a place to work?" Scale 0–10.</li>
+        <li><strong>Turnover and Absenteeism:</strong> High turnover/absenteeism = low engagement signal.</li>
+        <li><strong>Performance Data:</strong> Engaged employees show higher productivity metrics.</li>
+      </ul>
+      <p><strong>Conclusion:</strong> Workforce planning and employee engagement are interdependent pillars of talent management. Analytics enables organizations to move from gut-feel HR decisions to data-driven strategies that optimize their most valuable asset — their people.</p>
+    </div>
+  </div>
+
+  <div class="survival">
+    <h3>🚀 306 HR Analytics — Survival Kit</h3>
+    <h4 style="color:#e2c36b; margin-top:14px;">Top 5 Must-Do:</h4>
+    <ol><li style="color:#ddd; font-size:14px;">LAMP Framework (with table)</li><li style="color:#ddd; font-size:14px;">HR Metrics &amp; KPIs with formulas</li><li style="color:#ddd; font-size:14px;">HR Dashboarding + HR Scorecard</li><li style="color:#ddd; font-size:14px;">Workforce Planning process</li><li style="color:#ddd; font-size:14px;">Employee Engagement — drivers &amp; measurement</li></ol>
+    <div class="mnemonic" style="background:#2a3a5e; color:#ddd; border-color:#e2c36b;">LAMP = <strong>L</strong>ogic (Why?), <strong>A</strong>nalytics (How?), <strong>M</strong>easures (What?), <strong>P</strong>rocess (Then?)<br>Analytics Levels = <strong>DDPP</strong>: Descriptive → Diagnostic → Predictive → Prescriptive</div>
+  </div>
+</div>
+
+<!-- ==================== 308 ADVERTISING ==================== -->
+<div id="asp" class="page">
+  <h2>308 — Advertising and Sales Promotion (4 Credits) [Elective]</h2>
+
+  <div class="grid3">
+    <div class="unit-box"><h4>Unit I (14 hrs)</h4><p>Advertising meaning, DAGMAR, Hierarchy of Effects, Building Ad Programs</p></div>
+    <div class="unit-box"><h4>Unit II (14 hrs)</h4><p>Media Planning, Advertising Effectiveness, Legal &amp; Ethical aspects</p></div>
+    <div class="unit-box"><h4>Unit III (14 hrs)</h4><p>Sales Promotion — concept, tools, relationship with advertising</p></div>
+    <div class="unit-box"><h4>Unit IV (14 hrs)</h4><p>Tools &amp; Techniques, B2B &amp; B2C promotions, Evaluation</p></div>
+  </div>
+
+  <h2>Predicted Question Bank — 308</h2>
+
+  <div class="card card-red">
+    <span class="prob-tag very-high">VERY HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit I</span>
+    <h3>Q1. Explain the DAGMAR Approach to advertising. What is the Hierarchy of Effects model? Discuss how advertising goals are set.</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> Setting clear advertising objectives is the foundation of effective advertising management. Two of the most important frameworks for defining advertising goals are the DAGMAR model and the Hierarchy of Effects model.</p>
+      <h4>DAGMAR Model:</h4>
+      <p>DAGMAR stands for <strong>Defining Advertising Goals for Measured Advertising Results</strong>. Developed by Russell Colley (1961), it argues that advertising's purpose is to achieve specific communication objectives that lead to a buying action.</p>
+      <h4>DAGMAR Communication Spectrum (4 Stages):</h4>
+      <table>
+        <tr><th>Stage</th><th>Consumer State</th><th>Advertising Objective</th></tr>
+        <tr><td>1. Unawareness</td><td>Consumer is unaware of product</td><td>Create Awareness</td></tr>
+        <tr><td>2. Awareness</td><td>Consumer knows product exists</td><td>Build Comprehension</td></tr>
+        <tr><td>3. Comprehension</td><td>Consumer understands benefits</td><td>Create Conviction</td></tr>
+        <tr><td>4. Conviction</td><td>Consumer intends to buy</td><td>Drive Action/Purchase</td></tr>
+      </table>
+      <p>DAGMAR insists that advertising goals must be: <strong>Concrete &amp; Measurable, Target Audience specific, Benchmark starting point defined, Time period specified.</strong></p>
+      <h4>Hierarchy of Effects Model (Lavidge &amp; Steiner, 1961):</h4>
+      <p>This model proposes that consumers move through a sequential hierarchy before making a purchase decision:</p>
+      <table>
+        <tr><th>Stage</th><th>Dimension</th><th>Description</th></tr>
+        <tr><td>1. Awareness</td><td rowspan="2">Cognitive (Think)</td><td>Consumer knows the brand exists</td></tr>
+        <tr><td>2. Knowledge</td><td>Consumer knows what the brand offers</td></tr>
+        <tr><td>3. Liking</td><td rowspan="2">Affective (Feel)</td><td>Consumer has favorable attitude</td></tr>
+        <tr><td>4. Preference</td><td>Consumer prefers this brand over others</td></tr>
+        <tr><td>5. Conviction</td><td rowspan="2">Conative (Do)</td><td>Consumer intends to buy</td></tr>
+        <tr><td>6. Purchase</td><td>Consumer actually buys</td></tr>
+      </table>
+      <h4>Building Advertising Goals — Key Principles:</h4>
+      <ul>
+        <li>Goals must be communication goals, not sales goals (sales affected by many factors beyond advertising).</li>
+        <li>Goals must be measurable with pre-and post-advertising research.</li>
+        <li>Goals must specify the target audience segment.</li>
+        <li>Goals must define the benchmark (current state) and desired change.</li>
+        <li>Goals must have a specific time frame.</li>
+      </ul>
+      <h4>Message Appeals in Advertising:</h4>
+      <ul>
+        <li><strong>Rational Appeal:</strong> Focuses on functional benefits — economy, quality, performance. (e.g., "30% more fuel efficient")</li>
+        <li><strong>Emotional Appeal:</strong> Triggers feelings — love, humor, fear, nostalgia. (e.g., Dove "Real Beauty" campaign)</li>
+        <li><strong>Moral Appeal:</strong> Appeals to sense of right and wrong. (e.g., social issue campaigns)</li>
+      </ul>
+      <p><strong>Conclusion:</strong> DAGMAR transformed advertising from an art to a science by insisting on measurable communication objectives. Combined with the Hierarchy of Effects model, it provides a roadmap for designing, executing, and evaluating advertising campaigns that systematically move consumers from unawareness to purchase.</p>
+    </div>
+  </div>
+
+  <div class="card card-red">
+    <span class="prob-tag very-high">VERY HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit III &amp; IV</span>
+    <h3>Q2. What is Sales Promotion? Explain the various tools and techniques of Sales Promotion. How is sales promotion different from advertising?</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> Sales Promotion refers to any incentive offered to stimulate the purchase or sale of a product or service, usually for a short period. It is a key element of the promotional mix that provides an extra reason to buy, try, or inquire about a product right now.</p>
+      <h4>Advertising vs Sales Promotion:</h4>
+      <table>
+        <tr><th>Basis</th><th>Advertising</th><th>Sales Promotion</th></tr>
+        <tr><td>Duration</td><td>Long-term brand building</td><td>Short-term tactical</td></tr>
+        <tr><td>Purpose</td><td>Create awareness/preference</td><td>Stimulate immediate action</td></tr>
+        <tr><td>Cost</td><td>High fixed cost</td><td>Variable, per-unit cost</td></tr>
+        <tr><td>Media</td><td>Mass media</td><td>Point of purchase, direct</td></tr>
+        <tr><td>Effect</td><td>Delayed</td><td>Immediate</td></tr>
+      </table>
+      <h4>Tools of Sales Promotion:</h4>
+      <h4>A. Consumer-Oriented Tools (Pull Strategy):</h4>
+      <ul>
+        <li><strong>Coupons:</strong> Certificate giving buyer a price reduction. Stimulates trial. (Zomato ₹100 off coupons)</li>
+        <li><strong>Samples:</strong> Free trial quantity. Most effective for new products. (Shampoo sachets)</li>
+        <li><strong>Price-Off/Discounts:</strong> Direct price reduction for a limited period. (Flipkart Big Billion Day)</li>
+        <li><strong>Premiums/Gifts:</strong> Free or reduced-price item offered with purchase. (Buy 2 get 1 free)</li>
+        <li><strong>Contests/Sweepstakes:</strong> Consumer participation for prizes. Builds excitement.</li>
+        <li><strong>Loyalty Programs/Bonus Points:</strong> Reward repeat customers. (Frequent flyer miles)</li>
+        <li><strong>Cashback Offers:</strong> Return of portion of purchase price. (Paytm cashback)</li>
+      </ul>
+      <h4>B. Trade-Oriented Tools (Push Strategy):</h4>
+      <ul>
+        <li><strong>Trade Discounts:</strong> Price reductions to retailers/wholesalers for purchase volume.</li>
+        <li><strong>Cooperative Advertising:</strong> Manufacturer shares cost of retailer's advertising.</li>
+        <li><strong>Dealer Contests:</strong> Competitions among dealers for sales targets. Prize = trip, cash.</li>
+        <li><strong>Point-of-Purchase (POP) Displays:</strong> In-store displays, shelf talkers.</li>
+        <li><strong>Trade Shows/Exhibitions:</strong> Industry events to showcase products to trade.</li>
+      </ul>
+      <h4>C. Sales Force-Oriented Tools:</h4>
+      <ul>
+        <li>Sales contests and bonuses</li>
+        <li>Sales training programs</li>
+        <li>Incentive tours for high achievers</li>
+      </ul>
+      <h4>Evaluation of Sales Promotion:</h4>
+      <p>Effectiveness measured by: Sales lift during promotion, Redemption rates (for coupons), Market share changes, Consumer trial and repeat rates, Trade inventory data.</p>
+      <p><strong>Conclusion:</strong> Sales promotion is an indispensable short-term tactical tool that complements long-term advertising. When properly planned and executed, it can accelerate sales, stimulate product trial, clear inventory, and build brand loyalty. The key is integration with advertising for consistent brand messaging.</p>
+    </div>
+  </div>
+
+  <div class="card card-amber">
+    <span class="prob-tag high">HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit II</span>
+    <h3>Q3. Explain Media Planning. What factors influence media selection? Discuss the evaluation of advertising effectiveness.</h3>
+    <div class="answer-box">
+      <h4>★ KEY POINTS ANSWER</h4>
+      <p><strong>Media Planning:</strong> The systematic process of determining which communication channels to use to reach the target audience, how often, and when — to achieve advertising objectives within budget.</p>
+      <h4>Key Media Planning Concepts:</h4>
+      <ul>
+        <li><strong>Reach:</strong> Percentage of target audience exposed to the ad at least once during the campaign.</li>
+        <li><strong>Frequency:</strong> Average number of times the target audience is exposed to the ad.</li>
+        <li><strong>GRP (Gross Rating Points):</strong> Reach × Frequency = Total advertising weight.</li>
+        <li><strong>CPM (Cost Per Thousand):</strong> Cost to reach 1,000 people with the message.</li>
+      </ul>
+      <h4>Factors Influencing Media Selection:</h4>
+      <ul>
+        <li>Nature of product (mass/niche market)</li>
+        <li>Target audience's media habits and reach</li>
+        <li>Advertising budget available</li>
+        <li>Geographic coverage required</li>
+        <li>Nature of message (visual vs. audio)</li>
+        <li>Competitor media strategy</li>
+      </ul>
+      <h4>Evaluating Advertising Effectiveness:</h4>
+      <ul>
+        <li><strong>Pre-testing:</strong> Focus groups, consumer juries, portfolio tests before launch.</li>
+        <li><strong>Post-testing:</strong> Recall tests, recognition tests, attitude change measurement after launch.</li>
+        <li><strong>Sales response:</strong> Direct link between advertising spend and sales (difficult to isolate).</li>
+        <li><strong>AIDA Model tracking:</strong> Awareness → Interest → Desire → Action metrics.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="survival">
+    <h3>🚀 308 Advertising &amp; Sales Promotion — Survival Kit</h3>
+    <h4 style="color:#e2c36b; margin-top:14px;">Top 5 Must-Do:</h4>
+    <ol><li style="color:#ddd; font-size:14px;">DAGMAR + Hierarchy of Effects (with table)</li><li style="color:#ddd; font-size:14px;">Sales Promotion tools (Consumer + Trade)</li><li style="color:#ddd; font-size:14px;">Media Planning — Reach, Frequency, GRP, CPM</li><li style="color:#ddd; font-size:14px;">Advertising vs Sales Promotion</li><li style="color:#ddd; font-size:14px;">Advertising effectiveness evaluation</li></ol>
+    <div class="mnemonic" style="background:#2a3a5e; color:#ddd; border-color:#e2c36b;">DAGMAR stages → <strong>UACP</strong>: Unawareness → Awareness → Comprehension → Purchase<br>Hierarchy of Effects → <strong>AK-LP-CP</strong>: Awareness → Knowledge → Liking → Preference → Conviction → Purchase</div>
+  </div>
+</div>
+
+<!-- ==================== 310 MARKETING FINANCIAL PRODUCTS ==================== -->
+<div id="mfps" class="page">
+  <h2>310 — Marketing of Financial Products and Services (4 Credits) [Elective]</h2>
+
+  <div class="grid3">
+    <div class="unit-box"><h4>Unit I (14 hrs)</h4><p>Marketing of Financial Services, Marketing Mix in Banking</p></div>
+    <div class="unit-box"><h4>Unit II (14 hrs)</h4><p>Retail Banking Products — Loans, Deposits, Plastic Money</p></div>
+    <div class="unit-box"><h4>Unit III (14 hrs)</h4><p>Mutual Funds, Insurance Products, Pension Funds, NPS</p></div>
+    <div class="unit-box"><h4>Unit IV (14 hrs)</h4><p>Distribution Channels, Bancassurance, Globalization</p></div>
+  </div>
+
+  <h2>Predicted Question Bank — 310</h2>
+
+  <div class="card card-red">
+    <span class="prob-tag very-high">VERY HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit I</span>
+    <h3>Q1. Explain the Marketing Mix (7Ps) in the context of Financial Services/Banking. How does marketing of services differ from marketing of products?</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> Financial services marketing involves applying marketing principles to financial products like loans, deposits, insurance, and mutual funds. Unlike physical goods, financial services are intangible, making their marketing uniquely challenging.</p>
+      <h4>Services vs. Products Marketing:</h4>
+      <p>Financial services are characterized by the 4 I's:</p>
+      <ul>
+        <li><strong>Intangibility:</strong> Cannot be seen or touched before purchase. A savings account is a promise, not a physical product.</li>
+        <li><strong>Inseparability:</strong> Production and consumption happen simultaneously. Bank teller serves customer at that moment.</li>
+        <li><strong>Inconsistency/Variability:</strong> Service quality varies between employees and occasions.</li>
+        <li><strong>Inventory (Perishability):</strong> Services cannot be stored. An empty counter in a bank is lost capacity.</li>
+      </ul>
+      <h4>The 7Ps Marketing Mix for Financial Services:</h4>
+      <table>
+        <tr><th>P</th><th>Element</th><th>Financial Services Application</th></tr>
+        <tr><td><strong>1. Product</strong></td><td>What is offered</td><td>Savings accounts, home loans, insurance policies, mutual funds, credit cards</td></tr>
+        <tr><td><strong>2. Price</strong></td><td>Cost to customer</td><td>Interest rates, fees, charges, commission, processing fees</td></tr>
+        <tr><td><strong>3. Place</strong></td><td>Distribution</td><td>Branches, ATMs, mobile banking app, internet banking, agents, bancassurance</td></tr>
+        <tr><td><strong>4. Promotion</strong></td><td>Communication</td><td>TV ads, social media, relationship managers, financial advisors, PR</td></tr>
+        <tr><td><strong>5. People</strong></td><td>Human element</td><td>Bank employees, relationship managers, financial advisors — KEY in services</td></tr>
+        <tr><td><strong>6. Process</strong></td><td>Service delivery</td><td>Loan application process, KYC process, account opening procedure</td></tr>
+        <tr><td><strong>7. Physical Evidence</strong></td><td>Tangible cues</td><td>Bank branch ambience, website quality, passbook, policy document, app interface</td></tr>
+      </table>
+      <p>The last 3Ps (People, Process, Physical Evidence) are unique to services marketing and are critical in financial services where trust and reliability are paramount.</p>
+      <h4>Challenges in Financial Services Marketing:</h4>
+      <ul>
+        <li>Building trust in intangible products</li>
+        <li>Regulatory compliance in all marketing communications</li>
+        <li>Complexity of financial products for retail consumers</li>
+        <li>Maintaining consistent service quality across branches/channels</li>
+        <li>Competition from fintech disruption</li>
+      </ul>
+      <p><strong>Conclusion:</strong> The 7P framework, when applied to financial services with special emphasis on People, Process, and Physical Evidence, creates a robust marketing strategy. In today's digital era, financial service providers must combine traditional relationship-based marketing with digital channels to reach and serve customers effectively.</p>
+    </div>
+  </div>
+
+  <div class="card card-red">
+    <span class="prob-tag very-high">VERY HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit III</span>
+    <h3>Q2. Explain Mutual Funds in India — structure, types, and marketing strategies. What is the regulatory framework governing mutual funds?</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> A Mutual Fund is an investment vehicle that pools money from multiple investors to invest in a diversified portfolio of securities (stocks, bonds, money market instruments). It is managed by professional fund managers and regulated by SEBI (Securities and Exchange Board of India).</p>
+      <h4>Structure of a Mutual Fund in India:</h4>
+      <ul>
+        <li><strong>Sponsor:</strong> Company that establishes the mutual fund (e.g., SBI, HDFC, ICICI).</li>
+        <li><strong>Trust/SEBI:</strong> The mutual fund is constituted as a trust. Trustees protect investors' interests.</li>
+        <li><strong>Asset Management Company (AMC):</strong> Manages the fund's investments. SEBI registered.</li>
+        <li><strong>Custodian:</strong> Holds the securities on behalf of the fund.</li>
+        <li><strong>Registrar &amp; Transfer Agent (RTA):</strong> Handles investor records, transactions (e.g., CAMS, KFintech).</li>
+      </ul>
+      <h4>Types of Mutual Funds:</h4>
+      <h4>A. By Structure:</h4>
+      <ul>
+        <li><strong>Open-ended:</strong> Units bought/sold continuously at NAV. Highly liquid. (Most popular)</li>
+        <li><strong>Close-ended:</strong> Fixed units issued at NFO. Listed on stock exchange. Fixed maturity.</li>
+        <li><strong>Interval Funds:</strong> Combination — mostly close-ended but opens at intervals.</li>
+      </ul>
+      <h4>B. By Asset Class:</h4>
+      <ul>
+        <li><strong>Equity Funds:</strong> Invest primarily in stocks. High risk, high return potential. (ELSS, Large-cap, Mid-cap, Flexi-cap)</li>
+        <li><strong>Debt Funds:</strong> Invest in fixed income — bonds, government securities. Lower risk. (Liquid funds, Gilt funds)</li>
+        <li><strong>Hybrid Funds:</strong> Mix of equity and debt. Balanced risk-return. (Balanced Advantage Fund)</li>
+        <li><strong>Index Funds/ETFs:</strong> Passive funds tracking market indices (Nifty 50, Sensex).</li>
+      </ul>
+      <h4>Key Concepts:</h4>
+      <div class="formula">NAV (Net Asset Value) = (Total Assets - Liabilities) / Number of Units Outstanding<br>SIP = Systematic Investment Plan — investing fixed amount periodically (monthly)</div>
+      <h4>Marketing Strategies for Mutual Funds:</h4>
+      <ul>
+        <li><strong>Digital marketing:</strong> Google ads, YouTube financial content, social media campaigns.</li>
+        <li><strong>Distributor network:</strong> Banks (bancassurance model), IFAs (Independent Financial Advisors), online platforms (Zerodha Coin, Groww).</li>
+        <li><strong>Investor Education:</strong> AMFI's "Mutual Funds Sahi Hai" campaign — awareness building.</li>
+        <li><strong>SIP promotion:</strong> Small-ticket entry (₹500/month) to attract first-time investors.</li>
+      </ul>
+      <p><strong>Regulatory Framework:</strong> SEBI regulates all mutual funds. Key regulations: SEBI (Mutual Funds) Regulations 1996. AMFI (Association of Mutual Funds in India) is the self-regulatory body. All MF advertisements must be approved and include standard risk disclaimer.</p>
+      <p><strong>Conclusion:</strong> Mutual funds have democratized investing in India. With AUM crossing ₹50 lakh crore and 9+ crore folios, India's MF industry is one of the fastest-growing globally. Effective marketing combining digital reach, financial literacy, and SIP accessibility has been the industry's key growth driver.</p>
+    </div>
+  </div>
+
+  <div class="card card-amber">
+    <span class="prob-tag high">HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit II</span>
+    <h3>Q3. What is Retail Banking? Explain the various retail banking products and how they are marketed.</h3>
+    <div class="answer-box">
+      <h4>★ KEY POINTS ANSWER</h4>
+      <p><strong>Retail Banking:</strong> The provision of banking services to individual consumers (as opposed to businesses/institutions). Also called Consumer Banking. Focus is on high volume, standardized products.</p>
+      <h4>Retail Banking Products:</h4>
+      <h4>A. Deposit Products:</h4>
+      <ul>
+        <li><strong>Savings Account:</strong> Basic transaction account. Interest-bearing (2.5–4% p.a.). Unlimited withdrawals.</li>
+        <li><strong>Fixed Deposit (FD):</strong> Lump sum for fixed period at fixed interest. DICGC insured up to ₹5 lakh.</li>
+        <li><strong>Recurring Deposit (RD):</strong> Fixed monthly installments for fixed period.</li>
+        <li><strong>Current Account:</strong> Non-interest bearing, unlimited transactions. For businesses.</li>
+      </ul>
+      <h4>B. Credit/Loan Products:</h4>
+      <ul>
+        <li><strong>Home Loan:</strong> Secured loan for property purchase. 10–30 year tenure. Tax benefits under 80C.</li>
+        <li><strong>Personal Loan:</strong> Unsecured, quick disbursement. Higher interest rate (10–24% p.a.).</li>
+        <li><strong>Car/Vehicle Loan:</strong> Secured against vehicle. 3–7 year tenure.</li>
+        <li><strong>Education Loan:</strong> For higher education. Moratorium during study period.</li>
+        <li><strong>Agricultural/Kisan Credit Card (KCC):</strong> For farmers' working capital needs.</li>
+      </ul>
+      <h4>C. Payment Products:</h4>
+      <ul>
+        <li>Credit Cards, Debit Cards, Prepaid Cards</li>
+        <li>UPI, NEFT, RTGS, IMPS</li>
+        <li>Internet Banking, Mobile Banking Apps</li>
+      </ul>
+      <h4>Marketing Retail Banking Products:</h4>
+      <p>Key strategies: Cross-selling (offer home loan customer insurance), Relationship banking (dedicated RM for premium customers), Digital onboarding (video KYC), Location-based targeting, Financial literacy programs.</p>
+      <p><strong>Bancassurance:</strong> Partnership between bank and insurance company to sell insurance products through bank's distribution network. Bank earns commission; insurer gets wider reach.</p>
+    </div>
+  </div>
+
+  <div class="survival">
+    <h3>🚀 310 Marketing of Financial Products — Survival Kit</h3>
+    <h4 style="color:#e2c36b; margin-top:14px;">Top 5 Must-Do:</h4>
+    <ol><li style="color:#ddd; font-size:14px;">7Ps of Financial Services Marketing</li><li style="color:#ddd; font-size:14px;">Mutual Funds — types, structure, NAV formula</li><li style="color:#ddd; font-size:14px;">Retail Banking products</li><li style="color:#ddd; font-size:14px;">Bancassurance concept</li><li style="color:#ddd; font-size:14px;">Globalization impact on financial services</li></ol>
+    <div class="mnemonic" style="background:#2a3a5e; color:#ddd; border-color:#e2c36b;">7Ps → <strong>P</strong>roduct, <strong>P</strong>rice, <strong>P</strong>lace, <strong>P</strong>romotion, <strong>P</strong>eople, <strong>P</strong>rocess, <strong>P</strong>hysical evidence<br>MF structure → <strong>S-T-A-C-R</strong>: Sponsor → Trust → AMC → Custodian → RTA</div>
+  </div>
+</div>
+
+<!-- ==================== 312 BANKING LAWS ==================== -->
+<div id="bl" class="page">
+  <h2>312 — Banking Laws and Practice (3 Credits) [Elective]</h2>
+  <div class="card card-blue" style="margin-bottom:20px;">
+    <p>⚡ <strong>Important:</strong> This subject is highly structured and fact-heavy. Focus on key provisions of each Act. Use section numbers wherever you know them — examiners reward specificity.</p>
+  </div>
+
+  <div class="grid3">
+    <div class="unit-box"><h4>Unit I (12 hrs)</h4><p>Reserve Bank of India Act 1934 — full overview</p></div>
+    <div class="unit-box"><h4>Unit II (12 hrs)</h4><p>Banking Regulation Act 1949, IBC 2016</p></div>
+    <div class="unit-box"><h4>Unit III (10 hrs)</h4><p>IT Act 2000, Cyber Laws in Banking</p></div>
+    <div class="unit-box"><h4>Unit IV (8 hrs)</h4><p>SARFAESI Act 2002</p></div>
+  </div>
+
+  <h2>Predicted Question Bank — 312</h2>
+
+  <div class="card card-red">
+    <span class="prob-tag very-high">VERY HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit I</span>
+    <h3>Q1. Explain the salient features and functions of the Reserve Bank of India (RBI) Act, 1934. What is the role of RBI in monetary policy?</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> The Reserve Bank of India was established on April 1, 1935, under the Reserve Bank of India Act, 1934. It is India's central bank and monetary authority, responsible for regulating the country's monetary and financial system.</p>
+      <h4>Key Provisions of RBI Act 1934:</h4>
+      <h4>Establishment and Capital:</h4>
+      <ul>
+        <li>RBI was initially a privately held company; nationalized in 1949.</li>
+        <li>Headquartered in Mumbai. Managed by a Central Board of Directors.</li>
+        <li>Paid-up capital: ₹5 crore held by Government of India.</li>
+      </ul>
+      <h4>Central Board — Composition:</h4>
+      <ul>
+        <li>Governor (appointed by Government of India)</li>
+        <li>Up to 4 Deputy Governors</li>
+        <li>10 Directors nominated by Central Government</li>
+        <li>4 Directors from Local Boards (Mumbai, Kolkata, Delhi, Chennai)</li>
+        <li>2 Government Officials</li>
+      </ul>
+      <h4>Functions of RBI:</h4>
+      <ol>
+        <li><strong>Currency Issue:</strong> RBI has the sole right to issue currency notes (except ₹1 coin issued by Government). Minimum Reserve System — ₹200 crore minimum reserve (₹115 crore in gold).</li>
+        <li><strong>Banker to Government:</strong> Manages Government's banking transactions, public debt, foreign exchange reserves. Provides Ways and Means Advances (WMA) to governments.</li>
+        <li><strong>Banker's Bank:</strong> Provides credit to commercial banks. Lender of Last Resort.</li>
+        <li><strong>Monetary Policy:</strong> Controls money supply and credit to achieve price stability, growth, and financial stability. Uses instruments: Repo Rate, Reverse Repo Rate, CRR, SLR, MSF.</li>
+        <li><strong>Foreign Exchange Management:</strong> Manages India's foreign exchange reserves. FEMA 1999 administered by RBI.</li>
+        <li><strong>Regulatory Role:</strong> Licenses and supervises banks, NBFCs, payment systems.</li>
+        <li><strong>Developmental Role:</strong> Promotes financial inclusion, priority sector lending, agricultural credit.</li>
+      </ol>
+      <h4>Monetary Policy Tools:</h4>
+      <table>
+        <tr><th>Instrument</th><th>Current Rate (approx.)</th><th>Effect</th></tr>
+        <tr><td>Repo Rate</td><td>6.5% (indicative)</td><td>Rate at which RBI lends to banks; controls inflation</td></tr>
+        <tr><td>Reverse Repo Rate</td><td>Repo - 0.25%</td><td>Rate at which RBI borrows from banks; absorbs liquidity</td></tr>
+        <tr><td>CRR (Cash Reserve Ratio)</td><td>4%</td><td>% of deposits banks must hold with RBI in cash</td></tr>
+        <tr><td>SLR (Statutory Liquidity Ratio)</td><td>18%</td><td>% of deposits banks must hold in specified liquid assets</td></tr>
+        <tr><td>Bank Rate</td><td>6.75%</td><td>Long-term rate for borrowing from RBI</td></tr>
+        <tr><td>MSF (Marginal Standing Facility)</td><td>Repo + 0.25%</td><td>Emergency liquidity for banks</td></tr>
+      </table>
+      <p><strong>MPC (Monetary Policy Committee):</strong> Established under RBI Act (amended 2016). 6-member committee — 3 from RBI (including Governor) + 3 external experts appointed by Government. Decides Repo Rate by majority vote.</p>
+      <p><strong>Conclusion:</strong> The RBI Act 1934 provides the legal foundation for India's central bank to perform its critical monetary, regulatory, and developmental functions. As India's financial landscape evolves with digital banking, fintech, and global integration, RBI's role in maintaining monetary stability and financial inclusion continues to expand.</p>
+    </div>
+  </div>
+
+  <div class="card card-red">
+    <span class="prob-tag very-high">VERY HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit II</span>
+    <h3>Q2. Explain the Banking Regulation Act, 1949. What are the key provisions regarding licensing, capital requirements, and powers of RBI under this Act?</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> The Banking Regulation Act, 1949 is the primary legislation governing the operations of banking companies in India. It gives the Reserve Bank of India extensive powers to supervise, regulate, and control banking institutions to ensure the safety of depositors and stability of the banking system.</p>
+      <h4>Scope and Applicability:</h4>
+      <p>Applies to all banking companies (domestic and foreign) operating in India. Cooperative banks also brought under this Act (2020 amendment).</p>
+      <h4>Key Provisions:</h4>
+      <h4>1. Licensing of Banks (Section 22):</h4>
+      <p>No company can carry on banking business in India without a license from RBI. RBI grants license after satisfying itself about financial soundness, public interest, and management quality.</p>
+      <h4>2. Capital Requirements:</h4>
+      <ul>
+        <li>Minimum paid-up capital for new private sector banks: ₹500 crore.</li>
+        <li>Capital Adequacy Ratio (CAR/CRAR): Banks must maintain minimum 9% (Basel III norms) of risk-weighted assets as capital.</li>
+        <li>Tier 1 Capital (Common Equity) + Tier 2 Capital = Total Capital</li>
+      </ul>
+      <h4>3. Restrictions on Non-Banking Business:</h4>
+      <p>Banks cannot engage in trading, manufacturing, or non-banking activities. Can hold shares only in the ordinary course of banking.</p>
+      <h4>4. Prohibition of Trading (Section 8):</h4>
+      <p>Banks cannot deal in buying/selling of goods except in relation to bills of exchange or in the realization of security given to them.</p>
+      <h4>5. Reserve Fund (Section 17):</h4>
+      <p>Every bank must transfer at least 25% of profits to a reserve fund before dividend declaration.</p>
+      <h4>6. Cash Reserve (Section 18) and Liquid Assets (Section 24):</h4>
+      <p>Banks must maintain CRR (with RBI) and SLR (in approved assets). Now governed by RBI Act for CRR.</p>
+      <h4>7. Board of Directors (Section 10):</h4>
+      <p>Minimum 51% of directors must have special knowledge/practical experience in banking, accountancy, agriculture, small industry, etc. RBI can remove directors and appoint additional directors.</p>
+      <h4>8. Powers of RBI:</h4>
+      <ul>
+        <li>Inspect any bank's books of accounts</li>
+        <li>Issue directives on loans and advances</li>
+        <li>Supersede board of any bank</li>
+        <li>Cancel license of a bank</li>
+        <li>Amalgamation of banks under Section 44A</li>
+        <li>Moratorium (suspension) of failing bank</li>
+      </ul>
+      <h4>Insolvency and Bankruptcy Code (IBC) 2016 — Overview:</h4>
+      <p>IBC provides a time-bound (180+90 days) Corporate Insolvency Resolution Process (CIRP) for debt resolution. Key bodies: NCLT (National Company Law Tribunal), IBBI (Insolvency and Bankruptcy Board of India), Resolution Professional (RP). Aims to improve India's ease of doing business ranking and reduce NPA problem.</p>
+      <p><strong>Conclusion:</strong> The Banking Regulation Act 1949 is the bedrock of Indian banking regulation. Its provisions ensure depositor protection, system stability, and sound banking practices. Post-2008 global financial crisis, Basel III norms have strengthened capital requirements, making Indian banks more resilient.</p>
+    </div>
+  </div>
+
+  <div class="card card-amber">
+    <span class="prob-tag high">HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit IV</span>
+    <h3>Q3. Explain the SARFAESI Act 2002. What are its objectives, key provisions, and how does it help banks in NPA recovery?</h3>
+    <div class="answer-box">
+      <h4>★ FULL MODEL ANSWER</h4>
+      <p><strong>Introduction:</strong> The Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002 (SARFAESI Act) is a landmark legislation that empowers banks and financial institutions to recover non-performing assets (NPAs) without court intervention, through enforcement of security interest.</p>
+      <h4>Full Form:</h4>
+      <p>Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002.</p>
+      <h4>Objectives:</h4>
+      <ul>
+        <li>Provide a faster mechanism for recovery of dues from defaulting borrowers.</li>
+        <li>Promote securitization of financial assets to improve liquidity.</li>
+        <li>Establish Asset Reconstruction Companies (ARCs) to manage bad loans.</li>
+        <li>Reduce NPAs in the banking system.</li>
+        <li>Enable banks to enforce security without approaching courts for amounts above ₹1 lakh.</li>
+      </ul>
+      <h4>Key Provisions:</h4>
+      <h4>1. Securitisation:</h4>
+      <p>Banks can pool and convert standard loans (mortgages, auto loans) into marketable securities (Pass-Through Certificates/PTCs) and sell them to investors to raise liquidity.</p>
+      <h4>2. Asset Reconstruction Companies (ARCs):</h4>
+      <p>Specialized institutions that buy NPAs from banks at a discount. They then try to recover maximum value through restructuring, sale, or enforcement. Registered with RBI. Example: ARCIL, Phoenix ARC.</p>
+      <h4>3. Enforcement of Security Interest (Key Power):</h4>
+      <p>When borrower defaults and account is classified as NPA (90+ days overdue), bank can:</p>
+      <ul>
+        <li>Issue 60-day notice to borrower to pay.</li>
+        <li>If no payment, bank can take possession of secured asset (property, machinery, vehicles).</li>
+        <li>Sell the secured asset through public auction or private treaty.</li>
+        <li>Take over management of the borrower's business.</li>
+      </ul>
+      <h4>4. Applicability:</h4>
+      <ul>
+        <li>Applies to secured loans above ₹1 lakh.</li>
+        <li>Applies to: banks, FIs, ARCs.</li>
+        <li>Does NOT apply to: agricultural land, educational loans up to ₹10 lakh, loans below ₹1 lakh.</li>
+      </ul>
+      <h4>5. Debt Recovery Tribunal (DRT):</h4>
+      <p>Borrower can appeal against bank's action to DRT within 45 days. Bank's action stands unless DRT stays it.</p>
+      <h4>Benefits to Banks:</h4>
+      <ul>
+        <li>Faster recovery without lengthy court processes</li>
+        <li>Improved NPA ratios and asset quality</li>
+        <li>Securitization enables banks to free up capital for fresh lending</li>
+      </ul>
+      <p><strong>Conclusion:</strong> SARFAESI Act has been one of the most powerful tools in India's banking reform arsenal. By enabling out-of-court enforcement of security interests, it has significantly improved the speed and efficiency of NPA recovery, complementing other mechanisms like IBC 2016, DRTs, and Lok Adalats to create a comprehensive debt resolution ecosystem.</p>
+    </div>
+  </div>
+
+  <div class="card card-amber">
+    <span class="prob-tag high">HIGH PROBABILITY</span><span class="marks-tag">15 Marks</span><span class="unit-tag">Unit III</span>
+    <h3>Q4. Explain the IT Act 2000 and Cyber Laws relating to Banking. What are the provisions for Electronic Fund Transfer and Digital Signatures?</h3>
+    <div class="answer-box">
+      <h4>★ KEY POINTS ANSWER</h4>
+      <p><strong>IT Act 2000:</strong> Information Technology Act 2000 is the primary legislation governing e-commerce and digital transactions in India, including banking. Amended significantly in 2008.</p>
+      <h4>Key Provisions Relevant to Banking:</h4>
+      <ul>
+        <li><strong>Digital Signatures (Section 3-5):</strong> Legal recognition of digital signatures for authentication. Two types: Digital Signature (asymmetric cryptography) and Electronic Signature. Certifying Authorities (CAs) issue digital signature certificates.</li>
+        <li><strong>Electronic Records (Section 4):</strong> Legal recognition of electronic records. E-contracts, e-receipts, e-statements are legally valid.</li>
+        <li><strong>Electronic Payment Systems (Section 6A):</strong> Facilitates electronic delivery of services and payments by Government and businesses.</li>
+        <li><strong>Cyber Offenses relevant to banking:</strong> Hacking (Section 66), Identity theft (Section 66C), Phishing/Online fraud (Section 66D), Unauthorized access to computer systems.</li>
+        <li><strong>Cyber Appellate Tribunal:</strong> Adjudicates cyber disputes.</li>
+        <li><strong>Section 43A:</strong> Body corporate liability for data breaches — must compensate individuals.</li>
+      </ul>
+      <h4>Electronic Fund Transfer (EFT) Systems in India:</h4>
+      <table>
+        <tr><th>System</th><th>Full Form</th><th>Settlement</th><th>Limit</th></tr>
+        <tr><td>NEFT</td><td>National Electronic Funds Transfer</td><td>Batch (every hour, 24×7)</td><td>No limit</td></tr>
+        <tr><td>RTGS</td><td>Real Time Gross Settlement</td><td>Real-time individual</td><td>Min ₹2 lakh</td></tr>
+        <tr><td>IMPS</td><td>Immediate Payment Service</td><td>Instant, 24×7</td><td>Up to ₹5 lakh</td></tr>
+        <tr><td>UPI</td><td>Unified Payments Interface</td><td>Instant, 24×7</td><td>Up to ₹1 lakh/txn</td></tr>
+      </table>
+      <p><strong>RBI Cybersecurity Framework for Banks:</strong> RBI has issued comprehensive guidelines on cybersecurity for banks including Board-level cyber risk oversight, Security Operations Center (SOC), Customer awareness, Cyber insurance, Incident reporting within 2-6 hours.</p>
+    </div>
+  </div>
+
+  <div class="survival">
+    <h3>🚀 312 Banking Laws — Survival Kit</h3>
+    <h4 style="color:#e2c36b; margin-top:14px;">Top 5 Must-Do:</h4>
+    <ol><li style="color:#ddd; font-size:14px;">RBI Act 1934 — Functions of RBI + MPC</li><li style="color:#ddd; font-size:14px;">Banking Regulation Act 1949 — Key provisions</li><li style="color:#ddd; font-size:14px;">SARFAESI Act 2002 — objectives, enforcement, ARCs</li><li style="color:#ddd; font-size:14px;">IT Act 2000 — Cyber crimes + EFT systems table</li><li style="color:#ddd; font-size:14px;">IBC 2016 — brief overview</li></ol>
+    <div class="mnemonic" style="background:#2a3a5e; color:#ddd; border-color:#e2c36b;">SARFAESI stands for → <strong>S</strong>ecuritisation and <strong>R</strong>econstruction of <strong>F</strong>inancial <strong>A</strong>ssets and <strong>E</strong>nforcement of <strong>S</strong>ecurity <strong>I</strong>nterest<br>RBI Monetary tools → <strong>RRCBS</strong>: Repo, Reverse repo, CRR, Bank rate, SLR</div>
+  </div>
+</div>
+
+<!-- ==================== COMMON FOOTER CONTENT ==================== -->
+
+<script>
+function show(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  const idx = ['home','pm','hrm','hra','asp','mfps','bl'].indexOf(id);
+  document.querySelectorAll('.nav button')[idx].classList.add('active');
+  window.scrollTo(0,0);
+}
+</script>
+</body>
+</html>
